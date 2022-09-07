@@ -1,0 +1,38 @@
+.custom-tooltip {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+
+    @media screen and (max-width: 1008px) {
+        gap: 8px;
+    }
+    
+    &__title {
+        font-size: 24px;
+        line-height: 30px;
+        color: #FFFFFF;
+        margin: 0;
+
+        @media screen and (max-width: 1008px) {
+            font-size: 16px;
+            line-height: 20px;
+        }
+    }
+
+    &__text {
+        font-family: 'Montserrat';
+        font-size: 14px;
+        line-height: 17px;
+        margin: 0;
+
+        @media screen and (max-width: 1008px) {
+            font-size: 10px;
+            line-height: 12px;
+        }
+
+        & span {
+            color: #A568FF;
+        }
+    }
+}
+

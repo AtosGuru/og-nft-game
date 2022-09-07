@@ -1,0 +1,258 @@
+.evolving {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    padding: 22px 70px 36px 0;
+
+    @media screen and (max-width: 1304px) {
+        padding: 22px 0 0 0;
+    }
+
+    @media screen and (max-width: 1008px) {
+        padding: 22px 40px 0 0;
+    }
+
+    @media screen and (max-width: 896px) {
+        padding: 22px 0 0 0;
+    }
+
+    @media screen and (max-width: 640px) {
+        padding: 20px 0;
+        width: 100%;
+        align-items: center;
+    }
+
+    &__name {
+        font-size: 30px;
+        line-height: 38px;
+        color: #FFFFFF;
+        margin: 0;
+
+        @media screen and (max-width: 1304px) {
+            font-size: 26px;
+        }
+    }
+
+    &__progress {
+        display: flex;
+        flex-direction: column;
+        max-width: 365px;
+
+        @media screen and (max-width: 640px) {
+            max-width: none;
+            width: 100%;
+        }
+    }
+
+    &__progress-level {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__progress-bar {
+
+        .progress-bar__fill {
+            background-color: #FF6B00;
+        }
+    }
+
+    &__level-left {
+        font-size: 20px;
+        line-height: 25px;
+        color: #FFFFFF;
+        text-transform: uppercase;
+
+        @media screen and (max-width: 1304px) {
+            font-size: 18px;
+        }
+
+        @media screen and (max-width: 896px) {
+            font-size: 16px;
+        }
+    }
+
+    &__level-right {
+        font-size: 16px;
+        line-height: 20px;
+        text-align: right;
+        color: #FFFFFF;
+
+        @media screen and (max-width: 896px) {
+            font-size: 16px;
+        }
+    }
+
+    &__button {
+        padding: 14px 24px;
+        background-color: transparent;
+        background: linear-gradient(156.43deg, #FFD600 8.43%, #FF8A00 84.81%);
+        box-shadow: 4px 4px 6px rgba(80, 71, 92, 0.5);
+        margin-top: 12px;
+
+        @media screen and (max-width: 1304px) {
+            width: 194px;
+            font-size: 14px;
+        }
+
+        @media screen and (max-width: 896px) {
+            font-size: 12px;
+        }
+
+        @media screen and (max-width: 640px) {
+            width: 160px;
+        }
+
+        &:disabled {
+            cursor: not-allowed;
+            pointer-events: none;
+            background: #6E697C;
+            box-shadow: none;
+        }
+    }
+
+    &__tooltip {
+        .ant-tooltip-content {
+            padding: 88px 8px 0 88px; 
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            @media screen and (max-width: 768px) {
+                padding: 72px 8px 0 56px;
+            }
+
+            @media screen and (max-width: 640px) {
+                padding: 72px 8px 0 72px;
+            }
+        }
+
+        .ant-tooltip-inner {
+            background-color: rgba(246, 240, 255, 0.95);
+            box-shadow: 0px 4px 8px 4px rgba(70, 65, 86, 0.4);
+            border-radius: 0px 4px 4px 4px;
+            font-family: 'Montserrat';
+            font-size: 14px;
+            line-height: 17px;
+            color: #2D2E42;
+            padding: 12px 3px 10px 24px;
+            word-wrap: normal;
+            width: 159px;
+
+            @media screen and (max-width: 768px) {
+                text-align: center;
+                width: 140px;
+                font-size: 12px;
+                padding: 10px 3px;
+            }
+        }
+    }
+
+    &__button-wrapper {
+        max-width: fit-content;
+    }
+
+    &__rule {
+        font-family: 'Montserrat';
+        font-size: 14px;
+        line-height: 17px;
+        color: #FFFFFF;
+        margin: 0;
+        position: relative;
+        padding-bottom: 18px;
+        max-width: 365px;
+
+        @media screen and (max-width: 640px) {
+            font-size: 12px;
+            line-height: 15px;
+            max-width: none;
+            width: 90%;
+            text-align: center;
+        }
+
+        &::after {
+            content: "";
+            width: 259px;
+            height: 2px;
+            background-color: #A568FF;
+            position: absolute;
+            left: 0;
+            bottom: 0;
+
+            @media screen and (max-width: 640px) {
+                width: 100%;
+            }
+        }
+    }
+
+    &__speed {
+        font-size: 20px;
+        line-height: 25px;
+        color: #FFFFFF;
+        margin: 3px 0;
+
+        @media screen and (max-width: 1304px) {
+            font-size: 16px;
+        }
+    }
+
+    &__buttons {
+        display: flex;
+        gap: 25px;
+
+        @media screen and (max-width: 896px) {
+            gap: 14px;
+        }
+
+        @media screen and (max-width: 640px) {
+            font-size: 12px;
+            line-height: 15px;
+        }
+    }
+
+    &__button-left {
+        padding: 14px 30px;
+        background: linear-gradient(156.43deg, #35D4C0 8.43%, #348379 84.81%);
+
+        @media screen and (max-width: 1304px) {
+            width: 194px;
+            font-size: 14px;
+        }
+
+        @media screen and (max-width: 896px) {
+            font-size: 12px;
+        }
+
+        @media screen and (max-width: 640px) {
+            width: 160px;
+        }
+
+        @media screen and (max-width: 370px) {
+            width: 143.5px;
+        }
+    }
+
+    &__button-right {
+        padding: 14px 16px;
+        background: linear-gradient(156.43deg, #A568FF 8.43%, #69449F 84.81%);
+
+        @media screen and (max-width: 1304px) {
+            width: 194px;
+            font-size: 14px;
+        }
+
+        @media screen and (max-width: 896px) {
+            font-size: 12px;
+            width: 180px;
+        }
+
+        @media screen and (max-width: 640px) {
+            width: 160px;
+        }
+
+        @media screen and (max-width: 370px) {
+            width: 143.5px;
+        }
+    }
+
+}

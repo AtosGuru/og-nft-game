@@ -1,0 +1,125 @@
+.dropdown {
+    display: flex;
+    flex-direction: column;
+    width: 210px;
+    position: relative;
+
+    @media screen and (max-width: 640px) {
+        width: 160px;
+    }
+
+    &__icon {
+        position: absolute;
+        top: 13px;
+        right: 16px;
+        font-size: 20px;
+
+        @media screen and (max-width: 640px) {
+            top: 32%;
+            right: 8px;
+            font-size: 16px;
+        }
+    }
+}
+
+.Dropdown-control {
+    cursor: pointer;
+    height: 48px;
+    width: 210px;
+    min-width: 100%;
+    background-color: #2D2E42;
+    border-radius: 16px;
+    position: relative;
+    font-size: 16px;
+    line-height: 20px;
+    color: #FFFFFF;
+    border: 2px solid #35D4C0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0;
+    transition: none;
+
+    @media screen and (max-width: 640px) {
+        width: 160px;
+        height: 40px;
+    }
+}
+
+.Dropdown-placeholder {
+    
+    @media screen and (max-width: 640px) {
+        font-size: 12px;
+        line-height: 15px;
+    }
+}
+
+.Dropdown-menu {
+    cursor: pointer;
+    background-color: #2D2E42;
+    z-index: 11;
+    font-size: 16px;
+    line-height: 20px;
+    color: #FFFFFF;
+    border: 2px solid #35D4C0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0 0 8px 0;
+    border-radius: 16px;
+    max-height: max-content;
+    position: absolute;
+}
+
+.Dropdown-option {
+    cursor: pointer;
+    height: 38px;
+    background-color: #2D2E42;
+    border-radius: 16px;
+    position: relative;
+    z-index: 11;
+    font-size: 16px;
+    line-height: 20px;
+    color: #FFFFFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 3px;
+    padding: 0;
+
+    @media screen and (max-width: 640px) {
+        font-size: 12px;
+        line-height: 15px;
+        height: 24px;
+    }
+
+    &.is-selected {
+        display: none;
+    }
+
+    &:hover {
+        background-color: transparent;
+        color: #FFFFFF;
+    }
+}
+
+.is-open {
+
+    .Dropdown-control {
+        border-bottom: 0;
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+    }
+    
+    .Dropdown-menu {
+        border-top: 0;
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+    }
+}
+
+

@@ -1,0 +1,58 @@
+@font-face {
+  font-family: 'PantonW01-Heavy';
+  src: local('PantonW01-Heavy'), url('./fonts/Panton\ W01\ Heavy.ttf') format('truetype');
+  src: local('PantonW01-Heavy'), url('./fonts/Panton\ W01\ Heavy.otf') format('truetype');
+  src: local('PantonW01-Heavy'), url('./fonts/Panton\ W01\ Heavy.woff') format('truetype');
+  src: local('PantonW01-Heavy'), url('./fonts/Panton\ W01\ Heavy.woff2') format('truetype');
+}
+@import 'antd/dist/antd.css';
+
+body {
+  padding: 0;
+  margin: 0 auto;
+  max-width: 1440px;
+  height: 1024px;
+  background-color: #2D2E42;
+  overflow-y: scroll;
+
+  * {
+    box-sizing: border-box;
+    font-family: 'PantonW01-Heavy';
+    font-weight: 500;
+  }
+}
+
+.app {
+  height: 100%;
+
+  &__main {
+    position: relative;
+    max-width: 1440px;
+    min-width: 280px;
+    height: 100%;
+    padding: 121px 4.76% 0 29%;
+
+    @media screen and (max-width: 1200px) {
+      padding: 121px 3% 0 34%;
+    }
+
+    @media screen and (max-width: 1008px) {
+      padding: 121px 20px 0 20px;
+    }
+  }
+}
+
+.approuter-enter {
+  opacity: 0;
+}
+.approuter-enter-active {
+  opacity: 1;
+  transition: opacity 200ms;
+}
+.approuter-exit {
+  opacity: 1;
+}
+.approuter-exit-active {
+  opacity: 0;
+  transition: opacity 200ms;
+}
