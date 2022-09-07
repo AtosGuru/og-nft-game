@@ -1,0 +1,28 @@
+.marketplace {
+    display: flex;
+    justify-content: flex-end;
+
+    @media screen and (max-width: 1008px) {
+        padding: 0;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin-top: 320px;
+    }
+
+    @media screen and (max-width: 488px) {
+        margin-top: 222px;
+    }
+
+    &__text {
+        font-size: 48px;
+        line-height: 61px;
+        color: #FFFFFF;
+        text-align: center;
+
+        @media screen and (max-width: 488px) {
+            font-size: 34px;
+            line-height: 48px;
+        }
+    }
+}

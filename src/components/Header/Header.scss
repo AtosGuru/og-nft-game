@@ -1,0 +1,124 @@
+.header {
+    position: absolute;
+    top: 31px;
+    width: 66%;
+    height: 61px;
+    background-color: #3E394C;
+    border: 2px solid #9887CE;
+    border-radius: 24px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 10.6%;
+    padding-right: 40px;
+
+    @media screen and (min-width: 1440px) {
+        max-width: 954px;
+        margin: 0 auto;
+    }
+
+    @media screen and (max-width: 1200px) {
+        width: 63%;
+    }
+
+    @media screen and (max-width: 1008px) {
+        top: 13px;
+        right: 20px;
+        left: 20px;
+        width: auto;
+        height: 40px;
+        border-radius: 10px;
+        padding-right: 14px;
+    }
+
+    &__points {
+        display: flex;
+        align-items: center;
+        gap: 60px;
+
+        @media screen and (max-width: 1200px) {
+            gap: 24px;
+        }
+    }
+
+    &__items {
+        display: flex;
+        gap: 12px;
+        align-items: center;
+
+        @media screen and (max-width: 1008px) {
+            height: 40px;
+            gap: 6px;
+        }
+    }
+
+    &__items-tooltip {
+        .ant-tooltip-content {
+            padding: 80px 8px 0 8px; 
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            @media screen and (max-width: 1008px) {
+                padding: 56px 8px 0 0;
+                transform: translateX(-100%);
+            }
+        }
+
+        .ant-tooltip-inner {
+            background-color: rgba(246, 240, 255, 0.95);
+            box-shadow: 0px 4px 8px 4px rgba(70, 65, 86, 0.4);
+            border-radius: 0px 4px 4px 4px;
+            font-family: 'Montserrat';
+            font-size: 14px;
+            line-height: 17px;
+            color: #2D2E42;
+            padding: 10px 13px;
+            word-wrap: normal;
+            width: 148px;
+
+            @media screen and (max-width: 1008px) {
+                border-radius: 4px 0 4px 4px;
+                width: 100px;
+                font-size: 10px;
+                line-height: 12px;
+                padding: 8px 0;
+            }
+        }
+    }
+
+    &__icons {
+        height: 75%;
+    }
+
+    &__items-total {
+        font-size: 20px;
+        line-height: 25px;
+        color: #FFFFFF;
+
+        @media screen and (max-width: 1008px) {
+            font-size: 12px;
+            line-height: 15px;
+        }
+    }
+
+    &__text {
+
+        @media screen and (max-width: 640px) {
+            display: none;
+        }
+    }
+
+    &__logo { 
+        display: none;
+
+        @media screen and (max-width: 1008px) {
+            display: block;
+            position: absolute;
+            width: 140px;
+            bottom: -8px;
+            left: 50%;
+            transform: translate(-50%, 100%);
+        }
+    }
+}

@@ -1,0 +1,28 @@
+.chests {
+    display: grid;
+    grid-template-columns: repeat(3, 224px);
+    justify-content: space-between;
+    grid-row-gap: 50px;
+    background-color: transparent;
+
+    @media screen and (max-width: 1120px) {
+        grid-template-columns: repeat(2, 224px);
+    }
+
+    @media screen and (max-width: 1008px) {
+        padding-top: 32px;
+        grid-template-columns: repeat(3, 224px);
+    }
+
+    @media screen and (max-width: 760px) {
+        grid-template-columns: repeat(3, 150px);
+    }
+
+    @media screen and (max-width: 512px) {
+        grid-template-columns: repeat(2, 150px);
+    }
+
+    @media screen and (max-width: 352px) {
+        grid-template-columns: repeat(2, 130px);
+    }
+}

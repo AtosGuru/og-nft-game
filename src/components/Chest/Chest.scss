@@ -1,0 +1,293 @@
+.chest {
+    display: flex;
+    flex-direction: column;
+    gap: 21px;
+    align-items: center;
+    width: 223px;
+    border-radius: 47px;
+    padding-bottom: 29px; 
+    background-color: #2D2E42;
+    position: relative;
+
+    @media screen and (max-width: 760px) {
+        width: 150px;
+        border-radius: 24px;
+        padding-bottom: 16px;
+        gap: 8px;
+    }
+
+    @media screen and (max-width: 352px) {
+        width: 130px;
+    }
+
+    &__gradient-common {
+        border-radius: 51px;
+        top: 0;
+        right: 0;
+        background: linear-gradient(to bottom, #9887CE, #554679);
+
+        @media screen and (max-width: 760px) {
+            border-radius: 26px;
+        }
+    }
+
+    &-common {
+        .chest__image {
+            border-color: #6A5E8F;
+        }
+    }
+
+    &__gradient-uncommon {
+        border-radius: 51px;
+        top: 0;
+        right: 0;
+        background: linear-gradient(to bottom, #4DC8D6, #3395E2);
+
+        @media screen and (max-width: 760px) {
+            border-radius: 26px;
+        }
+    }
+
+
+    &-uncommon {
+        .chest__image {
+            border-color: #3395E2;
+        }
+    }
+
+    &__gradient-rare {
+        border-radius: 51px;
+        top: 0;
+        right: 0;
+        background: linear-gradient(to bottom, #FFD600, #FF8A00);
+
+        @media screen and (max-width: 760px) {
+            border-radius: 26px;
+        }
+    }
+
+    &-rare {
+        .chest__image {
+            border-color: #FF8A00;
+        }
+    }
+
+    &__gradient-legendary {
+        border-radius: 51px;
+        top: 0;
+        right: 0;
+        background: linear-gradient(to bottom, #35D4C0, #573BB4);
+
+        @media screen and (max-width: 760px) {
+            border-radius: 26px;
+        }
+    }
+
+    &-legendary {
+        .chest__image {
+            border-color: #704AE8;
+        }
+    }
+
+    &__image {
+        border-bottom: 2px solid transparent;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0px 30px 14.7px 30px;
+        border-radius: 47px;
+        width: 100%;
+        height: 80%;
+
+        @media screen and (max-width: 760px) {
+            border-radius: 24px;
+        }
+    }
+
+    &__image-img {
+        width: 100%;
+        height: 100%;
+    }
+
+    &__tooltip-icon {
+        position: absolute;
+        width: 29px;
+        height: 29px;
+        border-radius: 50%;
+        top: 18px;
+        right: 19px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        @media screen and (max-width: 760px) {
+            width: 23px;
+            height: 23px;
+            top: 10px;
+            right: 10px;
+        }
+
+        @media screen and (max-width: 352px) {
+            width: 20px;
+            height: 20px;
+        }
+    }
+
+    &__tooltip-i {
+
+        @media screen and (max-width: 760px) {
+            width: 5px;
+        }
+    }
+
+    &__icon-common {
+        border: 2px solid #9887CE;
+    }
+
+    &__icon-uncommon {
+        border: 2px solid #49A6D0;
+    }
+
+    &__icon-rare {
+        border: 2px solid #EEBF20;
+    }
+
+    &__icon-legendary {
+        border: 2px solid #47BAC1;
+    }
+
+    &__name {
+        text-align: center;
+        margin: 0;
+        font-size: 20px;
+        line-height: 23px;
+        color: #FFFFFF;
+        text-transform: capitalize;
+
+        @media screen and (max-width: 760px) {
+            font-size: 14px;
+            line-height: 23px;
+        }
+
+        @media screen and (max-width: 352px) {
+            font-size: 12px;
+            line-height: 18px;
+        }
+    }
+
+    &__buttons {
+        display: flex;
+        flex-direction: column;
+        gap: 14px;
+
+        @media screen and (max-width: 760px) {
+            gap: 10px;
+        }
+    }
+
+    &__buttons-open {
+        background: linear-gradient(156.43deg, #FFEC3D 8.43%, #FF8A00 84.81%);
+    }
+
+    &__buttons-sell {
+        background: linear-gradient(156.43deg, #A568FF 8.43%, #522D88 84.81%);
+    }
+
+    &__tooltip-common {
+
+        .ant-tooltip-inner {
+            border-radius: 0 24px 24px 24px;
+
+            @media screen and (max-width: 1008px) {
+                border-radius: 0px 12px 12px 12px;
+            }
+        }
+    }
+
+    &__tooltip-uncommon {
+
+        .ant-tooltip-content {
+            transform: translateX(-100%);
+        }
+
+        .ant-tooltip-inner {
+            border-radius: 24px 0 24px 24px;
+
+            @media screen and (max-width: 1008px) {
+                border-radius: 12px 0px 12px 12px;
+            }
+        }
+    }
+
+    &__tooltip-rare {
+        .ant-tooltip-content {
+            transform: translateX(-100%);
+
+            @media screen and (max-width: 512px) {
+                transform: translate(0, -100%);
+            }
+        }
+
+        .ant-tooltip-inner {
+            border-radius: 24px 0 24px 24px;
+
+            @media screen and (max-width: 1008px) {
+                border-radius: 12px 0 12px 12px;
+            }
+
+            @media screen and (max-width: 512px) {
+                border-radius: 12px 12px 12px 0px;
+            }
+        }
+    }
+
+    &__tooltip-legendary {
+        .ant-tooltip-content {
+            transform: translateY(-94%);
+
+            @media screen and (max-width: 512px) {
+                transform: translate(-100%, -96%)
+            }
+        }
+
+        .ant-tooltip-inner {
+            border-radius: 24px 24px 24px 0;
+
+            @media screen and (max-width: 1008px) {
+                border-radius: 12px 12px 12px 0;
+            }
+
+            @media screen and (max-width: 512px) {
+                border-radius: 12px 12px 0px 12px;
+            }
+        }
+    }
+}
+
+.ant-tooltip-content {
+    position: absolute;
+    padding: 50px 8px 0 0px; 
+}
+
+.ant-tooltip-inner {
+    background-color: #575267;
+    box-shadow: 2px 4px 10px 4px rgba(0, 0, 0, 0.25);
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    width: 497px;
+    padding: 18px 0 28px 0;
+
+    @media screen and (max-width: 1008px) {
+        width: 200px;
+        font-size: 16px;
+        line-height: 20px;
+        padding: 10px 10px 10px 16px;
+    }
+}
+
+.ant-tooltip-arrow {
+    display: none;
+}
+

@@ -1,0 +1,119 @@
+.character {
+    padding: 20px;
+
+    @media screen and (max-width: 1304px) {
+        padding: 20px 0;
+    }
+
+    &__main {
+        display: flex;
+        justify-content: space-between;
+
+        @media screen and (max-width: 640px) {
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+            margin: 0 auto;
+        }
+    }
+
+    &__main-image {
+        width: 46%;
+        position: relative;
+
+        @media screen and (max-width: 1304px) {
+            width: 52%;
+        }
+
+        @media screen and (max-width: 640px) {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 365px;
+            order: 1;
+        }
+    }
+
+    &__image-img {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 4%;
+        z-index: 11;
+
+        @media screen and (max-width: 1304px) {
+            right: 0;
+            max-width: 400px;
+        }
+
+        @media screen and (max-width: 800px) {
+            max-width: 340px;
+            top: auto;
+        }
+
+        @media screen and (max-width: 640px) {
+            position: static; 
+        }
+    }
+
+    &__arrow {
+        cursor: pointer;
+        font-size: 64px;
+        color: #FFFF;
+        position: absolute;
+        top: 50%;
+        padding: 0;
+        margin: 0;
+        border: 0;
+        background-color: transparent;
+
+        &:disabled {
+            cursor: default;
+            color: #777;
+        }
+    }
+
+    &__arrow-left {
+
+        @media screen and (max-width: 1304px) {
+            left: -14px;
+        }
+
+        @media screen and (max-width: 640px) {
+            left: 0;
+        }
+    }
+
+    &__arrow-right {
+        right: 8%;
+
+        @media screen and (max-width: 1304px) {
+            right: 4%;
+        }
+
+        @media screen and (max-width: 640px) {
+            right: 0;
+        }
+    }
+    
+    &__main-info {
+        width: 54%;
+
+        @media screen and (max-width: 1304px) {
+            width: 48%;
+        }
+
+        @media screen and (max-width: 640px) {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            order: 0;
+        }
+    }
+
+    &__outlet {
+        order: 2;
+        width: 100%;
+    }
+}

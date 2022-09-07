@@ -1,0 +1,28 @@
+.small-button {
+    cursor: pointer;
+    border-radius: 24px; 
+    padding: 8px;
+    border: none;
+    height: 34px;
+    width: 105px;
+    font-size: 14px;
+    line-height: 18px;
+    color: #FFFFFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: capitalize;
+
+    @media screen and (max-width: 760px) {
+        font-size: 12px;
+        line-height: 15px;
+        width: 90px;
+        height: 28px;
+    }
+
+    @media screen and (max-width: 352px) {
+        width: 80px;
+        height: 24px;
+        font-size: 10px;
+    }
+}
