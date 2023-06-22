@@ -1,0 +1,55 @@
+.claim {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+
+    &__stones {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+        font-size: 16px;
+        line-height: 20px;
+        color: #FFFFFF;
+
+        @media screen and (max-width: 1296px) {
+            font-size: 14px;
+            line-height: 18px;
+        }
+
+        @media screen and (max-width: 640px) {
+            font-size: 12px;
+            line-height: 15px;
+        }
+    }
+
+    &__stones-label {
+        
+        &_disabled {
+            color: #878492;
+        }
+    }
+
+    &__label-claimed {
+        color: #878492;
+    }
+
+    &__button {
+        background: linear-gradient(156.43deg, #35D4C0 8.43%, rgba(37, 241, 180, 0.38) 84.81%);
+        box-shadow: 1px 2px 4px rgba(71, 69, 73, 0.5);
+
+        &:disabled {
+            cursor: not-allowed;
+            pointer-events: none;
+            background: #575267;
+            box-shadow: 1px 2px 4px rgba(71, 69, 73, 0.5);
+            color: #878492;
+        }
+    }
+
+    &__progress-disabled {
+        .progress-bar__fill {
+            background-color: transparent;
+        }
+    }
+}

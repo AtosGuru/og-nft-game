@@ -1,0 +1,70 @@
+.card {
+    width: 105px;
+    height: 123px;
+    min-width: 105px;
+    position: relative;
+    z-index: -1;
+    border-radius: 47px;
+
+    @media screen and (max-width: 1198px) {
+        width: 85px;
+        height: 103px;
+    }
+
+    &__wrapper {
+        cursor: pointer;
+    }
+
+    &__gradient {
+        width: calc(100% + 3px);
+        height: 108px;
+        border-radius: 47px;
+        bottom: 0;
+        left: 0;
+        z-index: 99;
+        border: none;
+    }
+
+    &__gradient-common {
+        border: 2px solid #A568FF;
+    }
+
+    &__gradient-gold {
+        background: linear-gradient(156.43deg, #FFD600 8.43%, #FF8A00 84.81%);
+    }
+
+    &__gradient-diamond {
+        background: linear-gradient(to bottom, #35D4C0, #A568FF);
+    }
+
+    &__background {
+        width: 100%;
+        height: 105px;
+        position: absolute;
+        bottom: -1px;
+        left: 0;
+        z-index: 1;
+        background-color: #575267;
+        border-radius: 47px;
+
+        &_glow-common {
+            box-shadow: 0 0 24px 8px #A568FF;
+        }
+
+        &_glow-gold {
+            box-shadow: 0 0 24px 8px #ff9924;
+        }
+
+        &_glow-diamond {
+            box-shadow: 0 0 24px 8px #47dac6;
+        }
+    }
+
+    &__image {
+        position: absolute;
+        bottom: -1px;
+        right: 0;
+        z-index: 111;
+    }
+}
+

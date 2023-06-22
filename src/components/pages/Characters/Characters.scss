@@ -1,0 +1,17 @@
+.characters {
+    overflow: visible;
+    display: flex;
+    flex-direction: column;
+
+    &__cards {
+        width: 100%;
+        height: 180px;
+        display: flex;
+        align-items: center;
+        gap: 40px;
+        padding: 10px 0 22px 2px; 
+        scrollbar-width: thin;
+        overflow-x: auto;
+        padding-left: 40px;
+    }
+}
